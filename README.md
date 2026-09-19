@@ -1,2 +1,0 @@
-# php
-FOR PHP CLASS CA233
