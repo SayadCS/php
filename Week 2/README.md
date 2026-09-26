@@ -1,6 +1,6 @@
-# Week 2 - PHP Basics and Control Structures
+# Week 2 - PHP Basics, Control Structures and Arrays
 
-This week focuses on the basics of PHP and different types of control structures and loops.
+This week focuses on the fundamentals of PHP programming, including constants, conditional statements, loops, break statements, nested loops, and arrays.
 
 ## Topics Covered
 
@@ -15,11 +15,16 @@ echo Age;
 
 ### 2. If / Else Statements
 
-The program uses `if` and `else` statements to check conditions. For example, it checks whether a person is an adult or a child based on their age.
+`if` and `else` statements are used to make decisions based on conditions.
+
+The example checks a person's age and displays:
+
+* **Adult** if the age is 18 or above
+* **Child** if the age is below 18
 
 ### 3. Grade System
 
-A grading system is included using `if`, `elseif`, and `else` statements:
+An `if`, `elseif`, and `else` structure is used to create a grading system.
 
 * **90–100:** A
 * **80–89:** B
@@ -29,19 +34,25 @@ A grading system is included using `if`, `elseif`, and `else` statements:
 
 ### 4. Fuel Condition
 
-An `if / else` statement is used to check the amount of fuel and display either **"Low"** or **"Full"**.
+A conditional statement checks the amount of fuel.
+
+If the fuel is less than or equal to 1, the program displays **"Low"**. Otherwise, it displays **"Full"**.
 
 ### 5. While Loop
 
-A `while` loop is used to repeatedly execute code while a condition is true. The example displays numbers from 1 to 5.
+A `while` loop repeatedly executes a block of code while a condition is true.
+
+The example displays numbers from 1 to 5.
 
 ### 6. Do While Loop
 
-A `do while` loop is demonstrated. Unlike a normal `while` loop, a `do while` loop runs the code at least once before checking the condition.
+A `do while` loop executes the code first and checks the condition afterwards.
+
+This means the code inside the loop will execute at least once.
 
 ### 7. For Loops
 
-Several `for` loops are used for different tasks, including:
+Several `for` loops are used for different tasks:
 
 * Displaying the multiplication table of 12
 * Printing numbers from 1 to 15
@@ -51,10 +62,74 @@ Several `for` loops are used for different tasks, including:
 
 The `break` statement is used to stop a loop when a specific condition is reached.
 
+In the example, the loop stops when the value reaches 10.
+
 ### 9. Nested Loops
 
-The code also demonstrates nested loops, where one `for` loop is placed inside another. This is used to create a multiplication table.
+A nested loop is a loop inside another loop.
+
+The example uses two `for` loops to create a multiplication table using rows and columns.
+
+### 10. Arrays
+
+Arrays are used to store multiple values inside a single variable.
+
+An indexed array is created using:
+
+```php
+$numbers = array();
+```
+
+Values can then be added using an index:
+
+```php
+$numbers[0] = 2;
+$numbers[1] = "ALI";
+```
+
+### 11. `print_r()`
+
+The `print_r()` function is used to display the contents of an array in a readable format.
+
+The `<pre>` HTML tag is used to make the output easier to read.
+
+### 12. `count()` and Arrays
+
+The `count()` function is used to find the number of elements inside an array.
+
+A `for` loop can then be used to go through each value in the array.
+
+### 13. Associative Arrays
+
+An associative array stores information using **keys and values** instead of only numerical indexes.
+
+The `=>` operator connects a key to its value.
+
+Example:
+
+```php
+$info = array(
+    "id" => "101",
+    "name" => "Mohamed Abdi Ali",
+    "age" => 20
+);
+```
+
+### 14. `var_dump()`
+
+The `var_dump()` function displays detailed information about a variable or array, including its data type and value.
+
+Example:
+
+```php
+var_dump($info);
+```
 
 ## Summary
 
-This week's work introduces important PHP programming concepts such as **constants, conditional statements, loops, break statements, and nested loops**. These concepts are useful for controlling how a PHP program makes decisions and repeats tasks.
+Week 2 covers important PHP fundamentals including **constants, conditional statements, grading systems, while loops, do while loops, for loops, break statements, nested loops, indexed arrays, associative arrays, `print_r()`, `count()`, and `var_dump()`**.
+
+These concepts provide the foundation for writing PHP programs that can make decisions, repeat tasks, and store and manage multiple pieces of data.
+
+```
+```
