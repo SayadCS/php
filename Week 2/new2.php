@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Examples</title>
 </head>
+
 <body>
 
 <?php
@@ -31,7 +32,7 @@ if ($Age >= 18) {
 echo "<br><br>";
 
 
-// Grade / Switch example
+// Grade example
 $marks = 100;
 
 if ($marks >= 90) {
@@ -61,7 +62,7 @@ if ($fuel <= 1) {
 echo "<br><br>";
 
 
-// Loop control structure - While loop
+// While loop
 $count = 1;
 
 while ($count <= 5) {
@@ -72,7 +73,7 @@ while ($count <= 5) {
 echo "<br>";
 
 
-// LOOPS - 1. Do While loop
+// Do While loop
 do {
     echo $count . "<br>";
     $count++;
@@ -81,7 +82,7 @@ do {
 echo "<br>";
 
 
-// LOOPS - 2. For loop
+// For loop
 // Multiplication table of 12
 for ($count = 1; $count <= 12; $count++) {
     echo "$count times 12 is " . ($count * 12) . "<br>";
@@ -107,7 +108,6 @@ echo "<br>";
 
 
 // Break statement
-// Exit from the loop when a certain condition is met
 $i = 1;
 
 while ($i <= 15) {
@@ -123,18 +123,71 @@ echo "<br><br>";
 
 
 // Nested loop to print multiplication table
-for ($i = 1; $i <= 3; $i++) { // Row loop
+for ($i = 1; $i <= 3; $i++) {
 
-    for ($j = 1; $j <= 5; $j++) { // Column loop
-
+    for ($j = 1; $j <= 5; $j++) {
         echo ($i * $j) . " ";
-
     }
 
     echo "<br>";
 }
 
+echo "<br>";
+
+
+// ARRAYS
+
+// First way to create an array
+$numbers = array();
+
+// Adding values to the array
+$numbers[0] = 2;
+$numbers[1] = "ALI";
+
+// Display all the values using the pre tag
+echo "<pre>";
+print_r($numbers);
+echo "</pre>";
+
+
+// Using a for loop to display the array values
+for ($i = 0; $i < count($numbers); $i++) {
+    echo $numbers[$i] . "<br>";
+}
+
+echo "<br>";
+
+
+// Associative array
+// The double arrow operator (=>) connects the key and value
+
+$info = array(
+    "id" => "101",
+    "name" => "Mohamed Abdi Ali",
+    "age" => 20,
+    "address" => "Hodan District",
+    "status" => "single",
+    "weight" => 160.5
+);
+
+
+// Displaying the information stored in the associative array
+echo "<pre>";
+
+echo "Information about the person:<br>";
+
+print_r($info);
+
+echo "</pre>";
+
+
+// var_dump() displays detailed information about the array
+echo "<pre>";
+var_dump($info);
+echo "</pre>";
+
 ?>
 
 </body>
 </html>
+```
